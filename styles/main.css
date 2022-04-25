@@ -23,6 +23,9 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  color: var(--main-dark-color);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 h1,
 h2,
@@ -60,6 +63,76 @@ address {
   padding-left: 15px;
   padding-right: 15px;
 }
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 32px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  bottom: 0;
+  clip: rect(0 0 0 0);
+}
 /*загальні налаштування*/
-
+.header {
+  border-bottom: 1px solid var(--main-light-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 210px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+.nav-link {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+button.contact-button {
+  min-width: 180px;
+  padding: 13px 22px;
+  color: var(--primary-brand-color);
+  box-shadow: 0px 0px 20px 4px rgba(51, 93, 232, 0.25);
+  border-radius: 16px;
+  border-style: none;
+  background-color: var(--white-color);
+  cursor: pointer;
+}
 /*header*/
+.hero {
+  background-color: var(--tertiary-light-color);
+  padding: 64px 0;
+}
+.main-title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  margin-right: 40px;
+  margin-bottom: 80px;
+}
+.hero-container>p{
+    margin-right: 180px;
+    margin-bottom: 30px;
+}
+.order-link{
+    min-width: 180px;
+    display: inline-block;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+    padding: 13px 16px;
+    border-radius: 16px;
+}
+/*hero*/
