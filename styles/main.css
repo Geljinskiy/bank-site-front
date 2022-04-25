@@ -1,12 +1,29 @@
-html{
-    box-sizing: border-box;
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Lora", serif;
+  --primary-brand-color: #335de8;
+  --secondary-brand-color: #374078;
+  --complementary-brand-color: #fa4646;
+  --main-light-color: #efeff2;
+  --secondary-light-color: #c4c4c4;
+  --tertiary-light-color: #f5f5f5;
+  --white-color: #ffffff;
+  --main-dark-color: #111111;
+}
+html {
+  box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-
+body {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
 h1,
 h2,
 h3,
