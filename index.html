@@ -41,54 +41,69 @@
       </div>
     </header>
     <section class="hero">
-      <div class="container">
-        <h1 class="main-title">
-          <strong>QusaBank</strong> - найзручніший банк цього світу
-        </h1>
-        <p>Оформлюй картку в один клік у будь-який момент часу</p>
-        <a href="" class="order-link link">Оформити</a>
+      <div class="hero-container container">
+        <div class="hero-text-part">
+          <h1 class="main-title">
+            <strong>QusaBank</strong> - найзручніший банк цього світу
+          </h1>
+          <p>Оформлюй картку в один клік у будь-який момент часу</p>
+          <a href="" class="order-link link">Оформити</a>
+        </div>
+        <img src="./images/jpg,png/hero.png" alt="чоловік" width="613">
       </div>
     </section>
     <section class="advantages-main">
       <div class="container">
         <h2 class="visually-hidden">Переваги</h2>
         <!--Має бути схованним-->
-        <ul class="advantage-list list">
-          <li>
-            <div class="advantage-thumb">
-              <h3 class="subtitle">Швидкість</h3>
-              <p>
+        <ul class="advantage-list card-set list">
+          <li class="advantage-item card-set-item">
+            <div class="advantage-pic">
+              <svg width="84" class="advantage-svg">
+                <use href="./images/sprite.svg#time"></use>
+              </svg>
+            </div>
+              <h3 class="advantage-subtitle subtitle">Швидкість</h3>
+              <p class="small-p">
                 Усі операції з фінансами онлайн проходять не довше 30 секунд.
               </p>
-            </div>
           </li>
-          <li>
-            <div class="advantage-thumb">
-              <h3 class="subtitle">Надійність</h3>
-              <p>Ващі данні надійно захищенні від зловмисників.</p>
+          <li class="advantage-item card-set-item">
+            <div class="advantage-pic">
+              <svg width="84" class="advantage-svg">
+                <use href="./images/sprite.svg#lock"></use>
+              </svg>
             </div>
+              <h3 class="advantage-subtitle subtitle">Надійність</h3>
+              <p class="small-p">Ващі данні надійно захищенні від зловмисників.</p>
           </li>
-          <li>
-            <div class="advantage-thumb">
-              <h3 class="subtitle">Зручність</h3>
-              <p>
+          <li class="advantage-item card-set-item">
+            <div class="advantage-pic">
+              <svg width="84" class="advantage-svg">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+            </div>
+              <h3 class="advantage-subtitle subtitle">Зручність</h3>
+              <p class="small-p">
                 За допомогою мобільного додатку, ви можете зручно користуватися
                 усіма можливостями банку.
               </p>
-            </div>
           </li>
-          <li>
-            <div class="advantage-thumb">
-              <h3 class="subtitle">Підтримка</h3>
-              <p>Технічна підтримка на зв'язку 24/7.</p>
+          <li class="advantage-item card-set-item">
+            <div class="advantage-pic">
+              <svg width="84" class="advantage-svg"">
+                <use href="./images/sprite.svg#headphones"></use>
+              </svg>
             </div>
+              <h3 class="advantage-subtitle subtitle">Підтримка</h3>
+              <p class="small-p">Технічна підтримка на зв'язку 24/7.</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="investing-main">
-      <div class="container">
-        <div>
+      <div class="investing-main-container container">
+        <div class="investing-main-text-side">
           <h2 class="investing-main-title title">
             Інвестуй завдяки <strong>Qusa-інвестиції</strong>
           </h2>
@@ -100,35 +115,47 @@
             </li>
           </ul>
         </div>
-        <div class="join-investing">
-          <p>Стань інвестором разом із Qusa-QusaBank:</p>
-          <a href="" class="join-investing-link link">Інвестувати</a>
+        <div class="investing-main-graphic-side">
+          <img src="./images/jpg,png/graphic.png" alt="графік" width="750">
+          <div class="join-investing">
+            <p>Стань інвестором разом із Qusa-QusaBank:</p>
+            <a href="" class="join-investing-link link">Інвестувати</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="cards-main">
       <div class="container">
         <h2 class="cards-main-title title">Тарифи та картки</h2>
-        <ul class="cards-main-list list">
-          <li>
-            <a href="" class="link">
-              <h3 class="subtitle">N-card</h3>
-              <p>
+        <ul class="card-set list">
+          <li class="card-set-item">
+            <a href="" class="cards-main-link link">
+              <svg class="card-main-svg" width="300" height="190">
+                <use href="./images/cards-sprite.svg#n-card"></use>
+              </svg>
+              <h3 class="cards-main-name subtitle">N-card</h3>
+              <p class="small-p">
                 <b>Базова</b> картка: прості перекази, оплата комуналки,
                 функціональна виписка, налаштування картки.
               </p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
-              <h3 class="subtitle">average-card</h3>
-              <p>Картка для великих привілеїв і взагалі ніяких обмежень.</p>
+          <li class="card-set-item">
+            <a href="" class="cards-main-link link">
+              <svg class="card-main-svg"width="300" height="190">
+                <use href="./images/cards-sprite.svg#average-card"></use>
+              </svg>
+              <h3 class="cards-main-name subtitle">average-card</h3>
+              <p class="small-p">Картка для великих привілеїв і взагалі ніяких обмежень.</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
-              <h3 class="subtitle">infinity-card</h3>
-              <p>
+          <li class="card-set-item">
+            <a href="" class="cards-main-link link">
+              <svg class="card-main-svg" width="300" height="190">
+                <use href="./images/cards-sprite.svg#infinity-card"></use>
+              </svg>
+              <h3 class="cards-main-name subtitle">infinity-card</h3>
+              <p class="small-p">
                 Картка підкреслює статус власника. Це найвищий рівень турботи та
                 безпеки.
               </p>
@@ -138,34 +165,44 @@
       </div>
     </section>
     <section class="about-main">
-      <div class="container">
-          <h2 class="title">Ващі грощі у надійних руках</h2>
-          <em>“без довіри немає сенсу продовжувати”.</em>
-          <p>Долучайся до нашої тіми, оформлюй картку QusaBank:</p>
-          <a href="" class="link">Оформити</a>
-          <ul class="list">
-            <li>
-              <a href="" class="link">
-                <div class="">
-                  <img src="" alt="" />
-                  <p>
-                    Засновник та співвласник банку “QusaBank”. 17 місце в
-                    укрфїнському списку “Форбс”.
-                  </p>
+      <div class="about-main-container container">
+          <div class="about-main-text-side">
+            <h2 class="about-main-title title">Ващі грощі у надійних руках</h2>
+            <q class="about-main-cite">“без довіри немає сенсу продовжувати”.</q>
+            <p class="join-us">Долучайся до нашої тіми, оформлюй картку QusaBank:</p>
+            <a href="" class="order-link link">Оформити</a>
+          </div>
+          <ul class="owners-list list">
+            <li class="owner-item">
+              <a href="" class="owner-gh-link link">
+                <div class="owner-thumb">
+                  <img class="owner-photo" src="./images/jpg,png/geljinskiy.jpg" alt="Гельжинський - співвласник банку QusaBank" width="280"/>
+                  <div class="owner-description">
+                    <p>
+                      Засновник та співвласник банку “QusaBank”.
+                    </p>
+                    <p>17 місце в
+                      укрфїнському списку “Форбс”.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="subtitle">Гельжинський Савелій</h3>
+                <h3 class="owner-name subtitle">Гельжинський Савелій</h3>
               </a>
             </li>
-            <li>
-              <a href="" class="link">
-                <div class="">
-                  <img src="" alt="" />
-                  <p>
-                    Засновник та співвласник банку “QusaBank”. 19 місце в
-                    укрфїнському списку “Форбс”.
-                  </p>
+            <li class="owner-item">
+              <a href="" class="owner-gh-link link">
+                <div class="owner-thumb">
+                  <img class="owner-photo" src="./images/jpg,png/seleznev.jpg" alt="Селезньов - співвласник банку QusaBank" width="280"/>
+                  <div class="owner-description">
+                    <p>
+                      Засновник та співвласник банку “QusaBank”.
+                    </p>
+                    <p>19 місце в
+                      укрфїнському списку “Форбс”.
+                    </p>
+                  </div>
                 </div>
-                <h3 class="subtitle">Селезньов Володимир</h3>
+                <h3 class="owner-name subtitle">Селезньов Володимир</h3>
               </a>
             </li>
           </ul>
@@ -175,17 +212,18 @@
       <div class="container">
           <a href="" lang="en" class="logo link">QusaBank</a>
           <address>
-            <a href="" class="location link">адреса місцезнаходження</a>
-            <ul class="list">
-              <li>
-                <a href="mailto:alex_rozhkov@ukr.net" class="link"
-                  >alex_rozhkov@ukr.net</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380991723110" class="link">+38 099 172 31 10</a>
-              </li>
-            </ul>
+            <div class="footer-address-side">
+              <a class="footer-address-link location link" href="">адреса місцезнаходження</a>
+              <ul class="list">
+                <li>
+                  <a href="mailto:alex_rozhkov@ukr.net" class="footer-address-link link"
+                    >alex_rozhkov@ukr.net</a>
+                </li>
+                <li>
+                  <a href="tel:+380991723110" class="footer-address-link link">+38 099 172 31 10</a>
+                </li>
+              </ul>
+            </div>
           </address>
       </div>
     </footer>
