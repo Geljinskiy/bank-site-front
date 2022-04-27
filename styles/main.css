@@ -135,7 +135,7 @@ address {
   padding-bottom: 28px;
   transition: color var(--transition-main);
 }
-.nav-link:focus,
+.nav-link:focus-visible,
 .nav-link:hover {
   color: var(--primary-brand-color);
 }
@@ -151,7 +151,7 @@ button.contact-button {
   transition: color var(--transition-main),
     background-color var(--transition-main);
 }
-button.contact-button:focus,
+button.contact-button:focus-visible,
 button.contact-button:hover {
   color: var(--white-color);
   background-color: var(--primary-brand-color);
@@ -161,6 +161,57 @@ button.contact-button:hover {
   background-color: var(--tertiary-light-color);
   padding: 64px 0;
 }
+.hero-text-part {
+  width: 445px;
+  height: 282px;
+}
+.hero-svg-container {
+  position: relative;
+  width: 505px;
+  height: 355px;
+  margin-left: 107px;
+}
+.header-blop {
+  margin-left: 55px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.hero-svg {
+  position: absolute;
+  transition: transform var(--transition-main);
+}
+.hero-svg:focus-visible,
+.hero-svg:hover {
+  transform: scale(105%);
+}
+.hero-owners {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform var(--transition-main);
+}
+.hero1 {
+  left: 8px;
+}
+.hero2 {
+  right: 8px;
+}
+.hero-owners:focus-visible,
+.hero-owners:hover {
+  transform: scale(102%) translateY(-50%);
+}
+.hero-card {
+  left: 130px;
+  top: 50px;
+}
+.hero-id-card {
+  left: 305px;
+  top: 150px;
+}
+.hero-graphic {
+  left: 140px;
+  top: 210px;
+}
 .hero-container {
   display: flex;
   flex-direction: row;
@@ -169,7 +220,6 @@ button.contact-button:hover {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.27;
-  margin-right: 40px;
   margin-bottom: 80px;
 }
 .hero p {
@@ -188,7 +238,7 @@ button.contact-button:hover {
   transition: color var(--transition-main),
     background-color var(--transition-main);
 }
-.order-link:focus,
+.order-link:focus-visible,
 .order-link:hover {
   background-color: var(--white-color);
   color: var(--primary-brand-color);
@@ -234,6 +284,9 @@ button.contact-button:hover {
 .investing-main-graphic-side {
   min-width: 750px;
 }
+.investing-main-graphic {
+  border-radius: 16px;
+}
 .join-investing {
   display: flex;
   flex-direction: row;
@@ -251,7 +304,7 @@ button.contact-button:hover {
   transition: color var(--transition-main),
     background-color var(--transition-main);
 }
-.join-investing-link:focus,
+.join-investing-link:focus-visible,
 .join-investing-link:hover {
   color: var(--complementary-brand-color);
   background-color: var(--tertiary-light-color);
@@ -283,11 +336,11 @@ button.contact-button:hover {
   padding-right: 40px;
   transition: background-color var(--transition-main);
 }
-.cards-main-link:focus,
+.cards-main-link:focus-visible,
 .cards-main-link:hover {
   background-color: #f5f5f5;
 }
-.cards-main-link:focus .card-main-svg,
+.cards-main-link:focus-visible .card-main-svg,
 .cards-main-link:hover .card-main-svg {
   transform: rotate(3deg);
 }
@@ -341,7 +394,7 @@ button.contact-button:hover {
   transform: translateY(100%);
   transition: transform var(--transition-main);
 }
-.owner-gh-link:focus .owner-description,
+.owner-gh-link:focus-visible .owner-description,
 .owner-gh-link:hover .owner-description {
   transform: translateY(0%);
 }
@@ -349,7 +402,7 @@ button.contact-button:hover {
   text-align: center;
   transition: color var(--transition-main);
 }
-.owner-gh-link:focus .owner-name,
+.owner-gh-link:focus-visible .owner-name,
 .owner-gh-link:hover .owner-name {
   color: #335de8;
 }
@@ -369,7 +422,7 @@ button.contact-button:hover {
 .footer-address-side {
   display: inline-block;
 }
-.footer-address-side > .footer-address-link{
+.footer-address-side > .footer-address-link {
   color: var(--white-color);
 }
 .footer-address-link {
@@ -380,12 +433,12 @@ button.contact-button:hover {
   display: inline-block;
   transition: color var(--transition-main);
 }
-.footer-address-link:focus,
+.footer-address-link:focus-visible,
 .footer-address-link:hover {
   color: var(--complementary-brand-color);
 }
 .footer .logo {
   margin-bottom: 40px;
+  display: inline-block;
 }
-
 /*footer*/
