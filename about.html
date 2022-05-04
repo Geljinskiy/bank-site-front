@@ -41,51 +41,94 @@
     </header>
     <main>
       <section class="about">
-        <div class="container">
-          <!-- Slideshow container -->
-          <div class="about-bank">
-            <div class="slideshow-container">
-              <h1 class="about-hero-title">Ми - найсучасніший банк цього світу</h1>
-              <!-- Full-width images with number and caption text -->
-              <div class="slides">
-                <div class="mySlides fade">
-                  <img src="./images/jpg,png/Rectangle 29.jpg" />
-                  <span class="text">Маємо великий досвід</span>
-                </div>
-                <div class="mySlides fade">
-                  <img src="./images/jpg,png/Rectangle 26.jpg" />
-                  <span class="text">Все у твоєму смартфоні</span>
-                </div>
-                <div class="mySlides fade">
-                  <img src="./images/jpg,png/Rectangle 28.jpg" />
-                  <span class="text">Грощі у надійних руках</span>
-                </div>
-                <!-- Next and previous buttons -->
-                <a class="prev link" onclick="plusSlides(-1)">
-                  <svg class="nav-slider-svg" width="20" height="20">
-                    <use href="./images/sprite.svg#arrow-left"></use>
-                  </svg>
-                </a>
-                <a class="next link" onclick="plusSlides(1)">
-                  <svg class="nav-slider-svg" width="20px" height="20">
-                    <use href="./images/sprite.svg#arrow-right"></use>
-                  </svg>
-                </a>
+        <div class="about-container container">
+          <div class="slideshow-container">
+            <h1 class="about-hero-title">
+              Ми - найсучасніший банк цього світу
+            </h1>
+            <div class="about-slides">
+              <div class="about-slide">
+                <img src="./images/jpg,png/Rectangle 29.jpg" />
+                <span class="about-slide-text">Маємо великий досвід</span>
               </div>
-              <!-- The dots/circles -->
-              <div class="nav-dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+              <div class="about-slide">
+                <img src="./images/jpg,png/Rectangle 26.jpg" />
+                <span class="about-slide-text">Все у твоєму смартфоні</span>
               </div>
+              <div class="about-slide">
+                <img src="./images/jpg,png/Rectangle 28.jpg" />
+                <span class="about-slide-text">Грощі у надійних руках</span>
+              </div>
+              <!-- Next and previous buttons -->
+              <a class="prev link" onclick="plusSlides(-1)">
+                <svg class="nav-slider-svg" width="20" height="20">
+                  <use href="./images/sprite.svg#arrow-left"></use>
+                </svg>
+              </a>
+              <a class="next link" onclick="plusSlides(1)">
+                <svg class="nav-slider-svg" width="20px" height="20">
+                  <use href="./images/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
             </div>
-            <img
-              class="about-hero"
-              src="./images/jpg,png/Rectangle25.jpg"
-              width="545"
-              alt="фото банку"
-            />
+            <div class="about-nav-dots">
+              <span class="about-nav-dot" onclick="currentSlide(1)"></span>
+              <span class="about-nav-dot" onclick="currentSlide(2)"></span>
+              <span class="about-nav-dot" onclick="currentSlide(3)"></span>
+            </div>
           </div>
+          <img
+            class="about-hero"
+            src="./images/jpg,png/Rectangle25.jpg"
+            width="545"
+            alt="фото банку"
+          />
+        </div>
+      </section>
+      <section class="owners">
+        <div class="container">
+          <h2 class="owners-title">Наші власники</h2>
+          <ul class="list">
+            <li>
+              <img
+                class="owner-photo"
+                src="./images/jpg,png/seleznev.jpg"
+                alt="Селезньов - співвласник банку QusaBank"
+              />
+              <h2>Селзньов Володимир Дмитрович.</h2>
+              <p>Селезньов - співвласник банку QusaBank</p>
+              <p>
+                Займає пост фінансового директора банку. Всі операції
+                відбуваються від його імені, саме він відповідний за ваші
+                фінанси та всі можливі проблеми із ними.
+              </p>
+              <q>
+                “Часами і на Сонці бувають плями. Темніше за все перед
+                світанком. Я ще вам зараз розповім звідки ... .
+              </q>
+            </li>
+            <li>
+              <img
+                class="owner-photo"
+                src="./images/jpg,png/geljinskiy.jpg"
+                alt="Гельжинський - співвласник банку QusaBank"
+              />
+              <h2>Гельжинський Савелій Ігорович.</h2>
+              <p>Засновник та співвласник банку “QusaBank”.</p>
+              <p>
+                Займає пост головного директора банку. Не має ніяких відносин до
+                ваших грошей. Усі питання та можливі проблеми до нього не
+                відносяться!
+              </p>
+              <q
+                >“Вірите в Бога? Вірте і у “QusaBank”, вірте по-справжньому.
+                Збираємося застосовувати ту ж стратегію, що і на Заході:
+                Візьмемо всі наші слабкі боки і зробемо із них сильні. Ми
+                знаємо, як це зробити. Сила у цифрах. Ми керуємо цими вулицями і
+                хочемо дати братам можливість заробляти гроші.</q
+              >
+            </li>
+          </ul>
         </div>
       </section>
     </main>

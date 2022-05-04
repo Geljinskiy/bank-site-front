@@ -147,7 +147,7 @@ address {
   content: "";
   height: 2px;
   width: 100%;
-  bottom: 0;
+  bottom: 24px;
   left: 0;
   background-color: #335de8;
   border-radius: 26px;
@@ -412,7 +412,7 @@ button.contact-button:hover {
   width: 410px;
   margin-right: 85px;
 }
-.owners-list {
+.main-owners-list {
   display: flex;
 }
 .about-main-title {
@@ -427,20 +427,20 @@ button.contact-button:hover {
 .join-us {
   margin-bottom: 22px;
 }
-.owner-item:not(:last-child) {
+.main-owner-item:not(:last-child) {
   margin-right: 115px;
 }
 .owner-gh-link {
   display: inline-block;
   width: 280px;
 }
-.owner-thumb {
+.main-owner-thumb {
   position: relative;
   overflow: hidden;
   margin-bottom: 24px;
   border-radius: 16px;
 }
-.owner-description {
+.main-owner-description {
   color: var(--white-color);
   background-color: rgba(51, 93, 232, 0.7);
   top: 0;
@@ -450,19 +450,19 @@ button.contact-button:hover {
   transform: translateY(100%);
   transition: transform var(--transition-main);
 }
-.owner-gh-link:focus-visible .owner-description,
-.owner-gh-link:hover .owner-description {
+.owner-gh-link:focus-visible .main-owner-description,
+.owner-gh-link:hover .main-owner-description {
   transform: translateY(0%);
 }
-.owner-name {
+.main-owner-name {
   text-align: center;
   transition: color var(--transition-main);
 }
-.owner-gh-link:focus-visible .owner-name,
-.owner-gh-link:hover .owner-name {
+.owner-gh-link:focus-visible .main-owner-name,
+.owner-gh-link:hover .main-owner-name {
   color: #335de8;
 }
-.owner-description > p:not(:last-child) {
+.main-owner-description > p:not(:last-child) {
   margin-bottom: 24px;
 }
 .owner-photo {
@@ -497,20 +497,21 @@ button.contact-button:hover {
   margin-bottom: 40px;
   display: inline-block;
 }
+/* footer */
 .slideshow-container {
   width: 397px;
   margin-left: 74px;
   margin-top: auto;
   margin-bottom: auto;
 }
-.slides {
+.about-slides {
   position: relative;
   margin-bottom: 18px;
 }
-.mySlides {
+.about-slide {
   display: none;
 }
-.mySlides > img {
+.about-slide > img {
   border-radius: 16px;
 }
 .prev,
@@ -526,6 +527,7 @@ button.contact-button:hover {
   height: 40px;
   border-radius: 50%;
   border: 2px solid var(--secondary-light-color);
+  transition: border-color var(--transition-main);
   user-select: none;
 }
 .prev {
@@ -539,6 +541,7 @@ button.contact-button:hover {
 .nav-slider-svg,
 .nav-slider-svg {
   fill: var(--secondary-light-color);
+  transition: fill var(--transition-main);
 }
 .prev:hover > .nav-slider-svg,
 .next:hover > .nav-slider-svg {
@@ -548,41 +551,52 @@ button.contact-button:hover {
 .next:hover {
   border-color: var(--primary-brand-color);
 }
-/* Caption text */
-.text {
+.about-slide-text {
   color: var(--tertiary-light-color);
   position: absolute;
   width: 100%;
   text-align: center;
   top: 190px;
 }
-/* The dots/bullets/indicators */
-.nav-dots {
+.about-nav-dots {
   text-align: center;
 }
-.dot {
+.about-nav-dot {
   cursor: pointer;
   height: 12px;
   width: 12px;
   background-color: var(--secondary-light-color);
   border-radius: 50%;
   display: inline-block;
+  transition: background-color var(--transition-main);
 }
-.dot:not(:last-child) {
+.about-nav-dot:not(:last-child) {
   margin-right: 10px;
 }
 .active,
-.dot:hover {
+.about-nav-dot:hover {
   background-color: var(--primary-brand-color);
 }
-/* slider */
-.about-hero-title{
+.about-hero-title {
   margin-bottom: 45px;
 }
-.about-hero{
+.about-hero {
   margin-left: auto;
 }
-.about-bank{
+.about-container {
   display: flex;
 }
+.about-hero{
+  margin-top: -75px;
+  margin-bottom: -75px;
+}
 /* about */
+.owners{
+  background-color: var(--tertiary-light-color);
+}
+.owners-title{
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* owners */
