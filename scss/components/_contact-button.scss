@@ -1,0 +1,17 @@
+.contact-button {
+  min-width: 180px;
+  padding: 13px 22px;
+  color: var(--primary-brand-color);
+  box-shadow: 0px 0px 10px 2px rgba(51, 93, 232, 0.25);
+  border-radius: 16px;
+  border-style: none;
+  background-color: var(--white-color);
+  cursor: pointer;
+  transition: color var(--transition-main),
+    background-color var(--transition-main);
+}
+.contact-button:focus-visible,
+.contact-button:hover {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+}

@@ -1,0 +1,25 @@
+.staff__item {
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+.staff-container {
+  display: flex;
+}
+.staff__photo {
+  background-color: var(--primary-brand-color);
+  border-radius: 16px;
+  margin-right: 75px;
+}
+.staff__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.staff__name {
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.staff__comment {
+}

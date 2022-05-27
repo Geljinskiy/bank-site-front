@@ -1,0 +1,26 @@
+.footer {
+  color: var(--white-color);
+  background-color: var(--secondary-brand-color);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.footer__address {
+  display: inline-block;
+}
+.footer__link {
+  color: var(--secondary-light-color);
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: color var(--transition-main);
+}
+.footer__link_opaque {
+  color: var(--white-color);
+}
+.footer__link:focus-visible,
+.footer__link:hover {
+  color: var(--complementary-brand-color);
+}
+.logo_footer {
+  margin-bottom: 40px;
+  display: inline-block;
+}

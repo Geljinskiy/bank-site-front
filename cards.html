@@ -15,22 +15,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="header__container container">
         <a href="./index.html" lang="en" class="logo link">QusaBank</a>
         <nav>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a href="./cards.html" class="active-nav-link nav-link link">Картки</a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./cards.html" class="menu__link_active menu__link link"
+                >Картки</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Інвестиції</a>
+            <li class="menu__item">
+              <a
+                href="./investing.html"
+                class="menu__link_inactive menu__link link"
+                >Інвестиції</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link link">Про нас</a>
+            <li class="menu__item">
+              <a href="./about.html" class="menu__link_inactive menu__link link"
+                >Про нас</a
+              >
             </li>
           </ul>
         </nav>
@@ -38,14 +46,14 @@
       </div>
     </header>
     <main>
-      <section class="cards-main">
+      <section class="cards">
         <div class="container">
           <h2 class="visually-hidden">Картки та тарифи</h2>
           <ul class="card-set list">
-            <li class="card-set-item">
-              <a href="" class="cards-main-link link">
-                <div class="card-wrapper">
-                  <svg class="card-main-svg" width="300" height="190">
+            <li class="card-set__item">
+              <a href="" class="cards__link link">
+                <div class="card">
+                  <svg width="300" height="190">
                     <rect width="300" height="190" fill="#2C2A2A" rx="16" />
                     <rect
                       width="36"
@@ -66,16 +74,16 @@
                   </p>
                 </div>
                 <h3 lang="en" class="cards-main-name subtitle">N-card</h3>
-                <p class="small-p">
+                <p class="p_small">
                   <b>Базова</b> картка: прості перекази, оплата комуналки,
                   функціональна виписка, налаштування картки.
                 </p>
               </a>
             </li>
-            <li class="card-set-item">
-              <a href="" class="cards-main-link link">
-                <div class="card-wrapper">
-                  <svg class="card-main-svg" width="300" height="190">
+            <li class="card-set__item">
+              <a href="" class="cards__link link">
+                <div class="card">
+                  <svg width="300" height="190">
                     <rect width="300" height="190" fill="#EFEFF2" rx="16" />
                     <rect
                       width="36"
@@ -102,15 +110,15 @@
                   </p>
                 </div>
                 <h3 lang="en" class="cards-main-name subtitle">average-card</h3>
-                <p class="small-p">
+                <p class="p_small">
                   Картка для великих привілеїв і взагалі ніяких обмежень.
                 </p>
               </a>
             </li>
-            <li class="card-set-item">
-              <a href="" class="cards-main-link link">
-                <div class="card-wrapper">
-                  <svg class="card-main-svg" width="300" height="190">
+            <li class="card-set__item">
+              <a href="" class="cards__link link">
+                <div class="card">
+                  <svg width="300" height="190">
                     <rect width="300" height="190" fill="#374078" rx="16" />
                     <rect
                       width="36"
@@ -139,16 +147,16 @@
                 <h3 lang="en" class="cards-main-name subtitle">
                   infinity-card
                 </h3>
-                <p class="small-p">
+                <p class="p_small">
                   Картка підкреслює статус власника. Це найвищий рівень турботи
                   та безпеки.
                 </p>
               </a>
             </li>
-            <li class="card-set-item">
-              <a href="" class="cards-main-link link">
-                <div class="card-wrapper">
-                  <svg class="card-main-svg" width="300" height="190">
+            <li class="card-set__item">
+              <a href="" class="cards__link link">
+                <div class="card">
+                  <svg width="300" height="190">
                     <rect width="300" height="190" fill="#086DCA" rx="16" />
                     <rect
                       width="36"
@@ -173,16 +181,16 @@
                   </p>
                 </div>
                 <h3 lang="en" class="cards-main-name subtitle">child-card</h3>
-                <p class="small-p">
+                <p class="p_small">
                   Картка для клієнтів від 6 до 14 років. Включає в себе
                   батьківський контроль, а також нову тему додатку.
                 </p>
               </a>
             </li>
-            <li class="card-set-item">
-              <a href="" class="cards-main-link link">
-                <div class="card-wrapper">
-                  <svg class="card-main-svg" width="300" height="190">
+            <li class="card-set__item">
+              <a href="" class="cards__link link">
+                <div class="card">
+                  <svg width="300" height="190">
                     <rect width="300" height="190" fill="#F97A7A" rx="16" />
                     <rect
                       width="36"
@@ -202,23 +210,21 @@
                   <p class="card-term pink-card-secondary-color card-p">
                     00/00
                   </p>
-                  <p
-                    class="card-owner-name pink-card-secondary-color card-p"
-                  >
+                  <p class="card-owner-name pink-card-secondary-color card-p">
                     YOUR NAME
                   </p>
                 </div>
                 <h3 lang="en" class="cards-main-name subtitle">pink-card</h3>
-                <p class="small-p">
+                <p class="p_small">
                   На ній немає кредитного ліміту, так що вона ідеально підходить
                   для отримання зарплати або ФОП-виплат.
                 </p>
               </a>
             </li>
-            <li class="card-set-item">
-              <a href="" class="cards-main-link link">
-                <div class="card-wrapper">
-                  <svg class="card-main-svg" width="300" height="190">
+            <li class="card-set__item">
+              <a href="" class="cards__link link">
+                <div class="card">
+                  <svg width="300" height="190">
                     <rect width="300" height="190" fill="#FE9600" rx="16" />
                     <rect
                       width="36"
@@ -229,23 +235,17 @@
                       rx="6"
                     />
                   </svg>
-                  <p class="card-b-name hub-card-main-color card-p">
-                    QusaBank
-                  </p>
+                  <p class="card-b-name hub-card-main-color card-p">QusaBank</p>
                   <p class="card-number hub-card-main-color card-p">
                     5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990
                   </p>
-                  <p class="card-term hub-card-secondary-color card-p">
-                    00/00
-                  </p>
-                  <p
-                    class="card-owner-name hub-card-secondary-color card-p"
-                  >
+                  <p class="card-term hub-card-secondary-color card-p">00/00</p>
+                  <p class="card-owner-name hub-card-secondary-color card-p">
                     YOUR NAME
                   </p>
                 </div>
                 <h3 lang="en" class="cards-main-name subtitle">hub-card</h3>
-                <p class="small-p">Ніяких обмежень з цією карткою.</p>
+                <p class="p_small">Ніяких обмежень з цією карткою.</p>
               </a>
             </li>
           </ul>
@@ -254,11 +254,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="" lang="en" class="logo link">QusaBank</a>
+        <a href="" lang="en" class="logo_footer logo link">QusaBank</a>
         <address>
-          <div class="footer-address-side">
+          <div class="footer__address">
             <a
-              class="footer-address-link location link"
+              class="footer__link_opaque footer__link link"
               href="https://goo.gl/maps/NCCSErjgZUdGbSYT9"
               rel="noopener noreferrer nofollow"
               target="_blank"
@@ -269,12 +269,12 @@
                 <a
                   lang="en"
                   href="mailto:alex_rozhkov@ukr.net"
-                  class="footer-address-link link"
+                  class="footer__link link"
                   >alex_rozhkov@ukr.net</a
                 >
               </li>
               <li>
-                <a href="tel:+380991723110" class="footer-address-link link"
+                <a href="tel:+380991723110" class="footer__link link"
                   >+38 099 172 31 10</a
                 >
               </li>

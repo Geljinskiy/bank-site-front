@@ -1,0 +1,18 @@
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+}
+.advantages__item {
+  width: 270px;
+}
+.advantages__img {
+  background-color: var(--main-light-color);
+  margin-bottom: 23px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages__subtitle {
+  margin-bottom: 6px;
+}

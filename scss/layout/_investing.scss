@@ -1,0 +1,47 @@
+.investing_main {
+  background-color: var(--secondary-brand-color);
+  color: var(--tertiary-light-color);
+  padding-bottom: 50px;
+}
+.investing__container_main {
+  display: flex;
+}
+.graphic__img_main {
+  margin-bottom: 50px;
+}
+.investing__text_main {
+  margin-right: 40px;
+}
+.investing__title_main {
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.investing__graphic_main {
+  min-width: 750px;
+}
+.graphic__img_main {
+  border-radius: 16px;
+}
+.investing_join {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.investing__text_join {
+  margin-right: 88px;
+}
+.investing__link_join {
+  background-color: var(--complementary-brand-color);
+  min-width: 190px;
+  padding: 13px 16px;
+  text-align: center;
+  border-radius: 16px;
+  transition: color var(--transition-main),
+    background-color var(--transition-main);
+}
+.investing__link_join:focus-visible,
+.investing__link_join:hover {
+  color: var(--complementary-brand-color);
+  background-color: var(--tertiary-light-color);
+}

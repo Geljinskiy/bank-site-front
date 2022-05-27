@@ -15,22 +15,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="header__container container">
         <a href="./index.html" lang="en" class="logo link">QusaBank</a>
         <nav>
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a href="./cards.html" class="nav-link link">Картки</a>
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./cards.html" class="menu__link_inactive menu__link link"
+                >Картки</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Інвестиції</a>
+            <li class="menu__item">
+              <a
+                href="./investing.html"
+                class="menu__link_inactive menu__link link"
+                >Інвестиції</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="./about.html" class="active-nav-link nav-link link"
+            <li class="menu__item">
+              <a href="./about.html" class="menu__link_active menu__link link"
                 >Про нас</a
               >
             </li>
@@ -41,24 +48,31 @@
     </header>
     <main>
       <section class="about">
-        <div class="about-container container">
-          <div class="slideshow-container">
-            <h1 class="about-hero-title">
-              Ми - найсучасніший банк цього світу
-            </h1>
-            <div class="about-slides">
-              <div class="about-slide">
-                <img src="./images/jpg,png/Rectangle 29.jpg" />
-                <span class="about-slide-text">Маємо великий досвід</span>
-              </div>
-              <div class="about-slide">
-                <img src="./images/jpg,png/Rectangle 26.jpg" />
-                <span class="about-slide-text">Все у твоєму смартфоні</span>
-              </div>
-              <div class="about-slide">
-                <img src="./images/jpg,png/Rectangle 28.jpg" />
-                <span class="about-slide-text">Грощі у надійних руках</span>
-              </div>
+        <div class="about__container container">
+          <div class="slider">
+            <h1 class="about__title">Ми - найсучасніший банк цього світу</h1>
+            <ul class="slides list">
+              <li class="slides__item">
+                <img
+                  class="slides__img"
+                  src="./images/jpg,png/Rectangle 29.jpg"
+                />
+                <span class="slides__text">Маємо великий досвід</span>
+              </li>
+              <li class="slides__item">
+                <img
+                  class="slides__img"
+                  src="./images/jpg,png/Rectangle 26.jpg"
+                />
+                <span class="slides__text">Все у твоєму смартфоні</span>
+              </li>
+              <li class="slides__item">
+                <img
+                  class="slides__img"
+                  src="./images/jpg,png/Rectangle 28.jpg"
+                />
+                <span class="slides__text">Грощі у надійних руках</span>
+              </li>
               <!-- Next and previous buttons -->
               <a class="prev link" onclick="plusSlides(-1)">
                 <svg class="nav-slider-svg" width="20" height="20">
@@ -70,12 +84,12 @@
                   <use href="./images/sprite.svg#arrow-right"></use>
                 </svg>
               </a>
-            </div>
-            <div class="about-nav-dots">
-              <span class="about-nav-dot" onclick="currentSlide(1)"></span>
-              <span class="about-nav-dot" onclick="currentSlide(2)"></span>
-              <span class="about-nav-dot" onclick="currentSlide(3)"></span>
-            </div>
+            </ul>
+            <ul class="slider-nav list">
+              <li class="slider-nav__item" onclick="currentSlide(1)"></li>
+              <li class="slider-nav__item" onclick="currentSlide(2)"></li>
+              <li class="slider-nav__item" onclick="currentSlide(3)"></li>
+            </ul>
           </div>
           <img
             class="about-hero"
@@ -89,44 +103,105 @@
         <div class="container">
           <h2 class="owners-title">Наші власники</h2>
           <ul class="list">
-            <li>
-              <img
-                class="owner-photo"
-                src="./images/jpg,png/seleznev.jpg"
-                alt="Селезньов - співвласник банку QusaBank"
-              />
-              <h2>Селзньов Володимир Дмитрович.</h2>
-              <p>Селезньов - співвласник банку QusaBank</p>
-              <p>
-                Займає пост фінансового директора банку. Всі операції
-                відбуваються від його імені, саме він відповідний за ваші
-                фінанси та всі можливі проблеми із ними.
-              </p>
-              <q>
-                “Часами і на Сонці бувають плями. Темніше за все перед
-                світанком. Я ще вам зараз розповім звідки ... .
-              </q>
+            <li class="staff__item">
+              <article class="staff-container">
+                <img
+                  class="staff__photo"
+                  src="./images/jpg,png/seleznev.jpg"
+                  alt="Селезньов - співвласник банку QusaBank"
+                />
+                <div class="staff__text">
+                  <div class="staff__text_top">
+                    <h3 class="staff__name">Селзньов Володимир Дмитрович.</h3>
+                    <p>
+                      Селезньов - співвласник банку “QusaBank”.<br /><br />
+                      Займає пост фінансового директора банку. Всі операції
+                      відбуваються від його імені, саме він відповідний за ваші
+                      фінанси та всі можливі проблеми із ними.
+                    </p>
+                  </div>
+                  <q class="staff__comment">
+                    “Часами і на Сонці бувають плями. Темніше за все перед
+                    світанком.
+                  </q>
+                </div>
+              </article>
             </li>
-            <li>
-              <img
-                class="owner-photo"
-                src="./images/jpg,png/geljinskiy.jpg"
-                alt="Гельжинський - співвласник банку QusaBank"
-              />
-              <h2>Гельжинський Савелій Ігорович.</h2>
-              <p>Засновник та співвласник банку “QusaBank”.</p>
-              <p>
-                Займає пост головного директора банку. Не має ніяких відносин до
-                ваших грошей. Усі питання та можливі проблеми до нього не
-                відносяться!
-              </p>
-              <q
-                >“Вірите в Бога? Вірте і у “QusaBank”, вірте по-справжньому.
-                Збираємося застосовувати ту ж стратегію, що і на Заході:
-                Візьмемо всі наші слабкі боки і зробемо із них сильні. Ми
-                знаємо, як це зробити. Сила у цифрах. Ми керуємо цими вулицями і
-                хочемо дати братам можливість заробляти гроші.</q
-              >
+            <li class="staff__item">
+              <article class="staff-container">
+                <img
+                  class="staff__photo"
+                  src="./images/jpg,png/geljinskiy.jpg"
+                  alt="Гельжинський - співвласник банку QusaBank"
+                />
+                <div class="staff__text">
+                  <div class="staff__text_top">
+                    <h3 class="staff__name">Гельжинський Савелій Ігорович.</h3>
+                    <p>
+                      Засновник та співвласник банку “QusaBank”.<br /><br />
+                      Займає пост головного директора банку. Не має ніяких
+                      відносин до ваших грошей. Усі питання та можливі проблеми
+                      до нього не відносяться!
+                    </p>
+                  </div>
+                  <q class="staff__comment">
+                    “Вірите в Бога? Вірте і у “QusaBank”, вірте по-справжньому.
+                    Збираємося застосовувати ту ж стратегію, що і на Заході:
+                    Візьмемо всі наші слабкі боки і зробемо із них сильні. Ми
+                    знаємо, як це зробити. Сила у цифрах. Ми керуємо цими
+                    вулицями і хочемо дати братам можливість заробляти гроші.
+                  </q>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="investors">
+        <div class="container">
+          <h2 class="owners-title">Наші власники</h2>
+          <ul class="list">
+            <li class="staff__item">
+              <article class="staff-container">
+                <img
+                  class="staff__photo"
+                  src="./images/jpg,png/rozhkov.jpg"
+                  alt="Гельжинський - співвласник банку QusaBank"
+                />
+                <div class="staff__text">
+                  <div class="staff__text_top">
+                    <h3 class="staff__name">Рожков Алексій Константинович.</h3>
+                    <p>
+                      Ключова ланка компаеії “devbrother”. <br /><br />Інвестує
+                      в QusaBank понад десяти років, має позитивне враження від
+                      цього.
+                    </p>
+                  </div>
+                  <q class="staff__comment"> </q>
+                </div>
+              </article>
+            </li>
+            <li class="staff__item">
+              <article class="staff-container">
+                <img
+                  class="staff__photo"
+                  src="./images/jpg,png/suprun.jpg"
+                  alt="Селезньов - співвласник банку QusaBank"
+                />
+                <div class="staff__text">
+                  <div class="staff__text_top">
+                    <h3 class="staff__name">Супрун Мирослав Михайлович.</h3>
+                    <p>
+                      Шукає себе. Інвестує в QusaBank з року його створення. Має
+                      великий досвід торгівлі на фондовому ринку.
+                    </p>
+                  </div>
+                  <q class="staff__comment">
+                    “У моєму інвестиційному портфелі є багато яких компаній, але
+                    найвдаліша моя інвестиція є як раз “QusaBank.
+                  </q>
+                </div>
+              </article>
             </li>
           </ul>
         </div>
@@ -134,11 +209,11 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="" lang="en" class="logo link">QusaBank</a>
+        <a href="" lang="en" class="logo_footer logo link">QusaBank</a>
         <address>
-          <div class="footer-address-side">
+          <div class="footer__address">
             <a
-              class="footer-address-link location link"
+              class="footer__link_opaque footer__link link"
               href="https://goo.gl/maps/NCCSErjgZUdGbSYT9"
               rel="noopener noreferrer nofollow"
               target="_blank"
@@ -149,12 +224,12 @@
                 <a
                   lang="en"
                   href="mailto:alex_rozhkov@ukr.net"
-                  class="footer-address-link link"
+                  class="footer__link link"
                   >alex_rozhkov@ukr.net</a
                 >
               </li>
               <li>
-                <a href="tel:+380991723110" class="footer-address-link link"
+                <a href="tel:+380991723110" class="footer__link link"
                   >+38 099 172 31 10</a
                 >
               </li>
