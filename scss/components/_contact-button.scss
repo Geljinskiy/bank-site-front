@@ -9,9 +9,10 @@
   cursor: pointer;
   transition: color var(--transition-main),
     background-color var(--transition-main);
-}
-.contact-button:focus-visible,
-.contact-button:hover {
-  color: var(--white-color);
-  background-color: var(--primary-brand-color);
+
+  &:focus-visible,
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--primary-brand-color);
+  }
 }

@@ -32,13 +32,35 @@
             <li class="menu__item">
               <a href="./about.html" class="menu__link_inactive menu__link link">Про нас</a>
             </li>
+            <li class="menu__item_more menu__link_more menu__link link">Більше
+              <svg class="menu__svg_more" width="12" height="12">
+                <polygon points="0,0 10,6 0,12"/>
+              </svg>
+              <aside class="is-hidden menu_min">
+                <ul class="list">
+                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 1</a>
+                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 2</a>
+                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 3</a>
+                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 4</a>
+                </ul>
+              </aside>
+            </li>
           </ul>
         </nav>
         <button type="button" class="contact-button">Зв'язатися</button>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="navigation">
+      <ul class="navigation__list list">
+        <li class="navigation__item"><a href="#hero" class="navigation__link_active navigation__link link">Головна</a></li>
+        <li class="navigation__item"><a href="#advantages" class="navigation__link link">Переваги</a></li>
+        <li class="navigation__item"><a href="#investing" class="navigation__link link">Інвестуй</a></li>
+        <li class="navigation__item"><a href="#cards" class="navigation__link link">Картки</a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link link">Власники</a></li>
+      </ul>
+    </section>
+      <section class="hero section" id="hero">
         <div class="hero__container container">
           <div class="hero__text">
             <h1 class="main-title">
@@ -79,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages section" id="advantages">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
           <!--Має бути схованним-->
@@ -128,7 +150,7 @@
           </ul>
         </div>
       </section>
-      <section class="investing_main">
+      <section class="investing_main section" id="investing">
         <div class="investing__container_main container">
           <div class="investing__text_main">
             <h2 class="investing__title_main title">
@@ -151,7 +173,7 @@
           </div>
         </div>
       </section>
-      <section class="cards">
+      <section class="cards section" id="cards">
         <div class="container">
           <h2 class="cards__title_main title">Лідери продажу</h2>
           <ul class="card-set list">
@@ -212,7 +234,7 @@
           </ul>
         </div>
       </section>
-      <section class="about_main">
+      <section class="about_main section" id="about">
         <div class="about__container_main container">
             <div class="about__text_main">
               <h2 class="about__title_main title">Ващі грощі у надійних руках</h2>
@@ -276,5 +298,6 @@
           </address>
       </div>
     </footer>
+    <script src="./js/scrollBar.js"></script>
   </body>
 </html>

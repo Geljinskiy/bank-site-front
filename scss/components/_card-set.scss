@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   margin-left: var(--card-set-margin-neg);
   margin-top: var(--card-set-margin-neg);
-}
-.card-set__item {
-  margin-left: var(--card-set-margin-pos);
-  margin-top: var(--card-set-margin-pos);
-  flex-basis: calc(100% / var(--card-set__item) - 30px);
+  &__item {
+    margin-left: var(--card-set-margin-pos);
+    margin-top: var(--card-set-margin-pos);
+    flex-basis: calc(100% / var(--card-set__item) - 30px);
+  }
 }

@@ -1,5 +1,6 @@
 @import "./utlis/variables";
 @import "./utlis/visually-hidden";
+@import "./utlis/is-hidden";
 
 @import "./base/common";
 @import "./base/container";
@@ -11,6 +12,7 @@
 @import "./components/contact-button";
 @import "./components/order__link";
 @import "./components/slider";
+@import "./components/navigation";
 
 @import "./layout/header";
 @import "./layout/hero";
