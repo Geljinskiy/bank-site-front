@@ -403,6 +403,14 @@ section {
   position: absolute;
 }
 
+.menu__link_more {
+  position: relative;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  transition: color var(--transition-main);
+}
+
 .menu__svg_more {
   fill: currentColor;
   transform-origin: center center;
@@ -417,6 +425,10 @@ section {
   overflow: visible;
   cursor: default;
   padding-right: 18px;
+}
+
+.menu__item_more:hover .menu__span_more {
+  color: var(--primary-brand-color);
 }
 
 .menu__item_more:hover .menu__svg_more,

@@ -57,6 +57,13 @@
     border-radius: 26px;
     position: absolute;
   }
+  &__link_more {
+    position: relative;
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    transition: color var(--transition-main);
+  }
   &__svg_more {
     fill: currentColor;
     transform-origin: center center;
@@ -70,6 +77,9 @@
     overflow: visible;
     cursor: default;
     padding-right: 18px;
+    &:hover .menu__span_more {
+      color: var(--primary-brand-color);
+    }
     &:hover .menu__svg_more,
     &:focus-visible .menu__svg_more {
       transform: rotate(90deg) translatex(-5px);
