@@ -41,11 +41,13 @@
                 >Про нас</a
               >
             </li>
-            <li class="menu__item_more menu__link_more menu__link link">
-              Більше
-              <svg class="menu__svg_more" width="12" height="12">
-                <polygon points="0,0 10,6 0,12" />
-              </svg>
+            <li class="menu__item_more menu__link_more link">
+              <span class="menu__span_more">
+                Більше
+                <svg class="menu__svg_more" width="12" height="12">
+                  <polygon points="0,0 10,6 0,12" />
+                </svg>
+              </span>
               <aside class="is-hidden menu_min">
                 <ul class="list">
                   <li>
@@ -81,7 +83,64 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="contact-button">Зв'язатися</button>
+        <button contatct-modal-open type="button" class="main-button">
+          Зв'язатися
+        </button>
+        <div contatct-modal class="back-drop is-hidden">
+          <div class="modal">
+            <p class="modal__title">Залишіть свої дані, ми вам відповімо:</p>
+            <button
+              class="modal__button_close"
+              contatct-modal-close
+              type="button"
+            >
+              <svg class="modal__button_svg" height="18px" width="18px">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <form>
+              <label class="modal__label">
+                <span class="modal__text">Ім'я</span>
+                <span class="modal__contact">
+                  <input
+                    class="modal__field"
+                    required
+                    name="user-name"
+                    type="text"
+                  />
+                  <svg class="modal__svg" width="13.6" height="13.6">
+                    <use href="./images/sprite.svg#user-form-logo"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="modal__label">
+                <span class="modal__text">Телефон</span>
+                <span class="modal__contact">
+                  <input
+                    class="modal__field"
+                    required
+                    name="user-tel"
+                    type="tel"
+                  />
+                  <svg class="modal__svg" width="14.7" height="14.7">
+                    <use href="./images/sprite.svg#tel-form-logo"></use>
+                  </svg>
+                </span>
+              </label>
+              <label class="modal__label_text-area modal__label">
+                <span class="modal__text">Ваше питання (необов'язково)</span>
+                <textarea
+                  class="modal__label_contact-area modal__field"
+                  name="user-comment"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
+              <button class="order-button main-button" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -215,7 +274,10 @@
                       цього.
                     </p>
                   </div>
-                  <q class="staff__comment"> </q>
+                  <q class="staff__comment"
+                    >“QusaBank - це єдиний банк, у який я вірю ще менше ніж у
+                    криптовалюту.</q
+                  >
                 </div>
               </article>
             </li>
@@ -277,5 +339,6 @@
       </div>
     </footer>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

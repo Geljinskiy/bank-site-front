@@ -1,0 +1,113 @@
+.back-drop {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-main), visibility var(--transition-main);
+}
+.modal {
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  transition: transform var(--transition-main);
+
+  .back-drop.is-hidden & {
+    transform: translate(-50%, 0%);
+  }
+  &__button_close {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__button_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--form-color);
+    transition: color var(--transition-main);
+    .modal__button_close:focus &,
+    .modal__button_close:hover & {
+      fill: var(--primary-brand-color);
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  &__label_text-area {
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: var(--form-color);
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  &__field {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    outline: none;
+    transition: border-color var(--transition-main);
+    font-size: 16px;
+  }
+  &__field::placeholder {
+    font-size: 16px;
+    color: var(--secondary-light-color);
+  }
+  &__field:focus,
+  &__field:hover {
+    border-color: var(--primary-brand-color);
+  }
+  &__svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    fill: var(--form-color);
+    transition: fill var(--transition-main);
+    .modal__field:focus + &,
+    .modal__field:hover + & {
+      fill: var(--primary-brand-color);
+    }
+  }
+  &__label_contact-area {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    resize: none;
+    height: 120px;
+  }
+  &__contact {
+    width: 100%;
+    position: relative;
+  }
+}

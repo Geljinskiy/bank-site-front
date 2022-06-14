@@ -1,0 +1,9 @@
+.order-button {
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+  &:focus-visible,
+  &:hover {
+    background-color: var(--white-color);
+    color: var(--primary-brand-color);
+  }
+}

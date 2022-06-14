@@ -1,307 +1,419 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QusuBank - Головна</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__container container">
-        <a href="./index.html" lang="en" class="logo link">QusaBank</a>
-        <nav>
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="./cards.html" class="menu__link_inactive menu__link link">Картки</a>
-            </li>
-            <li class="menu__item">
-              <a href="./investing.html" class="menu__link_inactive menu__link link">Інвестиції</a>
-            </li>
-            <li class="menu__item">
-              <a href="./about.html" class="menu__link_inactive menu__link link">Про нас</a>
-            </li>
-            <li class="menu__item_more menu__link_more link">
-              <span class="menu__span_more">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QusuBank - Головна</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a href="./index.html" lang="en" class="logo link">QusaBank</a>
+      <nav>
+        <ul class="menu list">
+          <li class="menu__item">
+            <a href="./cards.html" class="menu__link_inactive menu__link link">Картки</a>
+          </li>
+          <li class="menu__item">
+            <a href="./investing.html" class="menu__link_inactive menu__link link">Інвестиції</a>
+          </li>
+          <li class="menu__item">
+            <a href="./about.html" class="menu__link_inactive menu__link link">Про нас</a>
+          </li>
+          <li class="menu__item_more menu__link_more link">
+            <span class="menu__span_more">
               Більше
-                <svg class="menu__svg_more" width="12" height="12">
-                  <polygon points="0,0 10,6 0,12"/>
-                </svg>
+              <svg class="menu__svg_more" width="12" height="12">
+                <polygon points="0,0 10,6 0,12" />
+              </svg>
             </span>
-              <aside class="is-hidden menu_min">
-                <ul class="list">
-                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 1</a>
-                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 2</a>
-                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 3</a>
-                  <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 4</a>
-                </ul>
-              </aside>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="contact-button">Зв'язатися</button>
-      </div>
-    </header>
-    <main>
-      <section class="navigation">
+            <aside class="is-hidden menu_min">
+              <ul class="list">
+                <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 1</a>
+                <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 2</a>
+                <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 3</a>
+                <li><a href="./investing.html" class="menu__link_min menu__link link">Розділ 4</a>
+              </ul>
+            </aside>
+          </li>
+        </ul>
+      </nav>
+      <button contatct-modal-open type="button" class="main-button">Зв'язатися</button>
+          <div contatct-modal class="back-drop is-hidden">
+            <div class="modal">
+              <p class="modal__title">Залишіть свої дані, ми вам відповімо:</p>
+              <button class="modal__button_close" contatct-modal-close type="button">
+                <svg class="modal__button_svg" height="18px" width="18px">
+                  <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <form>
+                <label class="modal__label">
+                  <span class="modal__text">Ім'я</span>
+                  <span class="modal__contact">
+                    <input class="modal__field" required name="user-name" type="text" />
+                    <svg class="modal__svg" width="13.6" height="13.6">
+                      <use href="./images/sprite.svg#user-form-logo"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal__label">
+                  <span class="modal__text">Телефон</span>
+                  <span class="modal__contact">
+                    <input class="modal__field" required name="user-tel" type="tel" />
+                    <svg class="modal__svg" width="14.7" height="14.7">
+                      <use href="./images/sprite.svg#tel-form-logo"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal__label_text-area modal__label">
+                  <span class="modal__text">Ваше питання (необов'язково)</span>
+                  <textarea class="modal__label_contact-area modal__field" name="user-comment"
+                    placeholder="Введіть текст"></textarea>
+                </label>
+                <button class="order-button main-button" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+    </div>
+  </header>
+  <main>
+    <section class="navigation">
       <ul class="navigation__list list">
-        <li class="navigation__item"><a href="#hero" class="navigation__link_active navigation__link link">Головна</a></li>
-        <li class="navigation__item"><a href="#advantages" class="navigation__link link">Переваги</a></li>
-        <li class="navigation__item"><a href="#investing" class="navigation__link link">Інвестуй</a></li>
-        <li class="navigation__item"><a href="#cards" class="navigation__link link">Картки</a></li>
-        <li class="navigation__item"><a href="#about" class="navigation__link link">Власники</a></li>
+        <li class="navigation__item">
+          <a href="#hero" class="navigation__link_active navigation__link link">
+            <svg class="navigation__svg" width="16" height="16">
+              <circle r="8" cx="50%" cy="50%" />
+            </svg>
+            <span class="navigation__name">Головна</span></a></li>
+        <li class="navigation__item"><a href="#advantages" class="navigation__link link"><svg class="navigation__svg"
+              width="16" height="16">
+              <circle r="8" cx="50%" cy="50%" />
+            </svg><span class="navigation__name">Переваги</span></a></li>
+        <li class="navigation__item"><a href="#investing" class="navigation__link link"><svg class="navigation__svg"
+              width="16" height="16">
+              <circle r="8" cx="50%" cy="50%" />
+            </svg><span class="navigation__name">Інвестиції</span></a></li>
+        <li class="navigation__item"><a href="#cards" class="navigation__link link"><svg class="navigation__svg"
+              width="16" height="16">
+              <circle r="8" cx="50%" cy="50%" />
+            </svg><span class="navigation__name">Картки</span></a></li>
+        <li class="navigation__item"><a href="#about" class="navigation__link link"><svg class="navigation__svg"
+              width="16" height="16">
+              <circle r="8" cx="50%" cy="50%" />
+            </svg><span class="navigation__name">Власники</span></a></li>
       </ul>
     </section>
-      <section class="hero section" id="hero">
-        <div class="hero__container container">
-          <div class="hero__text">
-            <h1 class="main-title">
-              <strong lang="en">QusaBank</strong> - найзручніший банк цього світу
-            </h1>
-            <p class="hero__text_order">Оформлюй картку в один клік у будь-який момент часу</p>
-            <a href="" class="order__link link">Оформити</a>
-          </div>
-          <div class="hero__container_svg">
-              <svg class="hero__svg_blop" width="415" height="300">
-                <use href="./images/sprite.svg#blop-hero"></use>
-              </svg>
-            <a class="hero1 hero__svg_owners hero__svg link" href="https://github.com/Geljinskiy" rel="noopener noreferrer nofollow" target="_blank">
-              <svg width="120" height="346">
-                <use href="./images/sprite.svg#hero1"></use>
-              </svg>
-            </a>
-            <a class="hero2 hero__svg_owners hero__svg link" href="https://github.com/Poison2300" rel="noopener noreferrer nofollow" target="_blank">
-              <svg width="110" height="340">
-                <use href="./images/sprite.svg#hero2"></use>
-              </svg>
-            </a>
-            <a class="hero__svg_card hero__svg link" href="./cards.html">
-              <svg width="150" height="80" >
-                <use href="./images/sprite.svg#card"></use>
-              </svg>
-            </a>
-            <a class="hero__svg_id-card hero__svg link" href="">
-              <svg width="55" height="55" >
-                <use href="./images/sprite.svg#id-card"></use>
-              </svg>
-            </a>
-            <a class="hero__svg_graphic hero__svg link" href="">
-              <svg width="110" height="60" >
-                <use href="./images/sprite.svg#graphic-hero"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="advantages section" id="advantages">
-        <div class="container">
-          <h2 class="visually-hidden">Переваги</h2>
-          <!--Має бути схованним-->
-          <ul class="advantages__list card-set list">
-            <li class="advantages__item card-set__item">
-              <div class="advantages__img">
-                <svg width="84">
-                  <use href="./images/sprite.svg#time"></use>
+    <section class="hero section" id="hero">
+      <div class="hero__container container">
+        <div class="hero__text">
+          <h1 class="main-title">
+            <strong lang="en">QusaBank</strong> - найзручніший банк цього світу
+          </h1>
+          <p class="hero__text_order">Оформлюй картку в один клік у будь-який момент часу</p>
+          <button data-modal-open type="button" class="order-button main-button">Оформити</button>
+          <div data-modal class="back-drop is-hidden">
+            <div class="modal">
+              <p class="modal__title">Залишіть свої дані, ми вам відповімо:</p>
+              <button class="modal__button_close" data-modal-close type="button">
+                <svg class="modal__button_svg" height="18px" width="18px">
+                  <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
-              </div>
-                <h3 class="advantages__subtitle subtitle">Швидкість</h3>
-                <p class="p_small">
-                  Усі операції з фінансами онлайн проходять не довше 30 секунд.
-                </p>
-            </li>
-            <li class="advantages__item card-set__item">
-              <div class="advantages__img">
-                <svg width="84">
-                  <use href="./images/sprite.svg#lock"></use>
-                </svg>
-              </div>
-                <h3 class="advantages__subtitle subtitle">Надійність</h3>
-                <p class="p_small">Ващі данні надійно захищенні від зловмисників.</p>
-            </li>
-            <li class="advantages__item card-set__item">
-              <div class="advantages__img">
-                <svg width="84">
-                  <use href="./images/sprite.svg#phone"></use>
-                </svg>
-              </div>
-                <h3 class="advantages__subtitle subtitle">Зручність</h3>
-                <p class="p_small">
-                  За допомогою мобільного додатку, ви можете зручно користуватися
-                  усіма можливостями банку.
-                </p>
-            </li>
-            <li class="advantages__item card-set__item">
-              <div class="advantages__img">
-                <svg width="84"">
-                  <use href="./images/sprite.svg#headphones"></use>
-                </svg>
-              </div>
-                <h3 class="advantages__subtitle subtitle">Підтримка</h3>
-                <p class="p_small">Технічна підтримка на зв'язку 24/7.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="investing_main section" id="investing">
-        <div class="investing__container_main container">
-          <div class="investing__text_main">
-            <h2 class="investing__title_main title">
-              Інвестуй завдяки <strong><span lang="en">Qusa</span>-інвестиції</strong>
-            </h2>
-            <ul>
-              <li>Зручний інтефейс аналізування графіків;</li>
-              <li>Можливість інвестування у міжнародні компанії;</li>
-              <li>
-                Відсутність комісії під час переказів на брокерський рахунок.
-              </li>
-            </ul>
-          </div>
-          <div class="investing__graphic_main">
-            <img class="graphic__img_main" width="750" src="./images/jpg,png/graphic.jpg" alt="графік">
-            <div class="investing_join">
-              <p class="investing__text_join">Стань інвестором разом із <span lang="en">Qusa-QusaBank</span>:</p>
-              <a href="" class="investing__link_join link">Інвестувати</a>
+              </button>
+              <form>
+                <label class="modal__label">
+                  <span class="modal__text">Ім'я</span>
+                  <span class="modal__contact">
+                    <input class="modal__field" required name="user-name" type="text" />
+                    <svg class="modal__svg" width="13.6" height="13.6">
+                      <use href="./images/sprite.svg#user-form-logo"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal__label">
+                  <span class="modal__text">Телефон</span>
+                  <span class="modal__contact">
+                    <input class="modal__field" required name="user-tel" type="tel" />
+                    <svg class="modal__svg" width="14.7" height="14.7">
+                      <use href="./images/sprite.svg#tel-form-logo"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal__label">
+                  <span class="modal__text">Пошта</span>
+                  <span class="modal__contact">
+                    <input class="modal__field" required name="user-email" type="email" />
+                    <svg class="modal__svg" width="17" height="13.6">
+                      <use href="./images/sprite.svg#email-form-logo"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal__label">
+                  <span class="modal__text">Тип картки</span>
+                  <span class="modal__contact">
+                    <input class="modal__field" required name="user-card" />
+                    <svg class="modal__svg" width="17" height="13.6">
+                      <use href="./images/sprite.svg#card-form-logo"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="modal__label_text-area modal__label">
+                  <span class="modal__text">Коментар</span>
+                  <textarea class="modal__label_contact-area modal__field" name="user-comment"
+                    placeholder="Введіть текст"></textarea>
+                </label>
+                <button class="order-button main-button" type="submit">Отправить</button>
+              </form>
             </div>
           </div>
         </div>
-      </section>
-      <section class="cards section" id="cards">
-        <div class="container">
-          <h2 class="cards__title_main title">Лідери продажу</h2>
-          <ul class="card-set list">
-            <li class="card-set__item">
-              <a href="" class="cards__link link">
-                <div class="card">
+        <div class="hero__container_svg">
+          <svg class="hero__svg_blop" width="415" height="300">
+            <use href="./images/sprite.svg#blop-hero"></use>
+          </svg>
+          <a class="hero1 hero__svg_owners hero__svg link" href="https://github.com/Geljinskiy"
+            rel="noopener noreferrer nofollow" target="_blank">
+            <svg width="120" height="346">
+              <use href="./images/sprite.svg#hero1"></use>
+            </svg>
+          </a>
+          <a class="hero2 hero__svg_owners hero__svg link" href="https://github.com/Poison2300"
+            rel="noopener noreferrer nofollow" target="_blank">
+            <svg width="110" height="340">
+              <use href="./images/sprite.svg#hero2"></use>
+            </svg>
+          </a>
+          <a class="hero__svg_card hero__svg link" href="./cards.html">
+            <svg width="150" height="80">
+              <use href="./images/sprite.svg#card"></use>
+            </svg>
+          </a>
+          <button data-modal-open type="button" class="hero__svg_id-card hero__svg link">
+            <svg width="55" height="55">
+              <use href="./images/sprite.svg#id-card"></use>
+            </svg>
+          </button>
+          <a class="hero__svg_graphic hero__svg link" href="./investing.html">
+            <svg width="110" height="60">
+              <use href="./images/sprite.svg#graphic-hero"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="advantages section" id="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Переваги</h2>
+        <!--Має бути схованним-->
+        <ul class="advantages__list card-set list">
+          <li class="advantages__item card-set__item">
+            <div class="advantages__img">
+              <svg width="84">
+                <use href="./images/sprite.svg#time"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle subtitle">Швидкість</h3>
+            <p class="p_small">
+              Усі операції з фінансами онлайн проходять не довше 30 секунд.
+            </p>
+          </li>
+          <li class="advantages__item card-set__item">
+            <div class="advantages__img">
+              <svg width="84">
+                <use href="./images/sprite.svg#lock"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle subtitle">Надійність</h3>
+            <p class="p_small">Ващі данні надійно захищенні від зловмисників.</p>
+          </li>
+          <li class="advantages__item card-set__item">
+            <div class="advantages__img">
+              <svg width="84">
+                <use href="./images/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle subtitle">Зручність</h3>
+            <p class="p_small">
+              За допомогою мобільного додатку, ви можете зручно користуватися
+              усіма можливостями банку.
+            </p>
+          </li>
+          <li class="advantages__item card-set__item">
+            <div class="advantages__img">
+              <svg width="84"">
+                  <use href=" ./images/sprite.svg#headphones"> </use> </svg> </div> <h3
+                class="advantages__subtitle subtitle">Підтримка</h3>
+                <p class="p_small">Технічна підтримка на зв'язку 24/7.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="investing_main section" id="investing">
+      <div class="investing__container_main container">
+        <div class="investing__text_main">
+          <h2 class="investing__title_main title">
+            Інвестуй завдяки <strong><span lang="en">Qusa</span>-інвестиції</strong>
+          </h2>
+          <ul>
+            <li>Зручний інтефейс аналізування графіків;</li>
+            <li>Можливість інвестування у міжнародні компанії;</li>
+            <li>
+              Відсутність комісії під час переказів на брокерський рахунок.
+            </li>
+          </ul>
+        </div>
+        <div class="investing__graphic_main">
+          <img class="graphic__img_main" width="750" src="./images/jpg,png/graphic.jpg" alt="графік">
+          <div class="investing_join">
+            <p class="investing__text_join">Стань інвестором разом із <span lang="en">Qusa-QusaBank</span>:</p>
+            <a href="./investing.html" class="investing__link_join link">Інвестувати</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards section" id="cards">
+      <div class="container">
+        <h2 class="cards__title_main title">Лідери продажу</h2>
+        <ul class="card-set list">
+          <li class="card-set__item">
+            <a href="./cards.html" class="cards__link link">
+              <div class="card">
                 <svg width="300" height="190">
-                  <rect width="300" height="190" fill="#2C2A2A" rx="16"/>
-                  <rect width="36" height="27" x="13" y="22" fill="#C4C4C4" rx="6"/>
+                  <rect width="300" height="190" fill="#2C2A2A" rx="16" />
+                  <rect width="36" height="27" x="13" y="22" fill="#C4C4C4" rx="6" />
                 </svg>
                 <p class="card-b-name n-card-main-color card-p">QusaBank</p>
-                <p class="card-number n-card-main-color card-p">5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990</p>
+                <p class="card-number n-card-main-color card-p">
+                  5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990</p>
                 <p class="card-term n-card-secondary-color card-p">00/00</p>
                 <p class="card-owner-name n-card-secondary-color card-p">YOUR NAME</p>
-                </div>
-                <h3 lang="en" class="cards-main-name subtitle">N-card</h3>
-                <p class="p_small">
-                  <b>Базова</b> картка: прості перекази, оплата комуналки,
-                  функціональна виписка, налаштування картки.
-                </p>
-              </a>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="cards__link link">
-                <div class="card">
+              </div>
+              <h3 lang="en" class="cards-main-name subtitle">N-card</h3>
+              <p class="p_small">
+                <b>Базова</b> картка: прості перекази, оплата комуналки,
+                функціональна виписка, налаштування картки.
+              </p>
+            </a>
+          </li>
+          <li class="card-set__item">
+            <a href="./cards.html" class="cards__link link">
+              <div class="card">
                 <svg width="300" height="190">
-                  <rect width="300" height="190" fill="#EFEFF2" rx="16"/>
-                  <rect width="36" height="27" x="13" y="22" fill="#C4C4C4" rx="6"/>
+                  <rect width="300" height="190" fill="#EFEFF2" rx="16" />
+                  <rect width="36" height="27" x="13" y="22" fill="#C4C4C4" rx="6" />
                 </svg>
                 <p class="card-b-name average-card-main-color card-p">QusaBank</p>
-                <p class="card-number average-card-main-color card-p">5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990</p>
+                <p class="card-number average-card-main-color card-p">
+                  5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990</p>
                 <p class="card-term average-card-secondary-color card-p">00/00</p>
                 <p class="card-owner-name average-card-secondary-color card-p">YOUR NAME</p>
-                </div>
-                <h3 lang="en" class="cards-main-name subtitle">average-card</h3>
-                <p class="p_small">Картка для великих привілеїв і взагалі ніяких обмежень.</p>
-              </a>
-            </li>
-            <li class="card-set__item">
-              <a href="" class="cards__link link">
-                <div class="card">
+              </div>
+              <h3 lang="en" class="cards-main-name subtitle">average-card</h3>
+              <p class="p_small">Картка для великих привілеїв і взагалі ніяких обмежень.</p>
+            </a>
+          </li>
+          <li class="card-set__item">
+            <a href="./cards.html" class="cards__link link">
+              <div class="card">
                 <svg width="300" height="190">
-                  <rect width="300" height="190" fill="#374078" rx="16"/>
-                  <rect width="36" height="27" x="13" y="22" fill="#C4C4C4" rx="6"/>
+                  <rect width="300" height="190" fill="#374078" rx="16" />
+                  <rect width="36" height="27" x="13" y="22" fill="#C4C4C4" rx="6" />
                 </svg>
                 <p class="card-b-name infinity-card-main-color card-p">QusaBank</p>
-                <p class="card-number infinity-card-main-color card-p">5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990</p>
+                <p class="card-number infinity-card-main-color card-p">
+                  5168&nbsp;&nbsp;&nbsp;7520&nbsp;&nbsp;&nbsp;2210&nbsp;&nbsp;&nbsp;8990</p>
                 <p class="card-term infinity-card-secondary-color card-p">00/00</p>
                 <p class="card-owner-name infinity-card-secondary-color card-p">YOUR NAME</p>
+              </div>
+              <h3 lang="en" class="cards-main-name subtitle">infinity-card</h3>
+              <p class="p_small">
+                Картка підкреслює статус власника. Це найвищий рівень турботи та
+                безпеки.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about_main section" id="about">
+      <div class="about__container_main container">
+        <div class="about__text_main">
+          <h2 class="about__title_main title">Ващі грощі у надійних руках</h2>
+          <q class="about__cite_main">“без довіри немає сенсу продовжувати”.</q>
+          <p class="about__text_join">Долучайся до нашої тіми, оформлюй картку <span lang="en">QusaBank</span>:</p>
+          <button data-modal-open type="button" class="order-button main-button">Оформити</button>
+        </div>
+        <ul class="owners__list_main list">
+          <li class="owners__item_main">
+            <a class="owners__link_gh link" href="https://github.com/Geljinskiy" rel="noopener noreferrer nofollow"
+              target="_blank">
+              <div class="staff_main">
+                <img class="staff__photo_main" src="./images/jpg,png/geljinskiy.jpg"
+                  alt="Гельжинський - співвласник банку QusaBank" width="280" />
+                <div class="owners__description">
+                  <p class="owners__description_part">
+                    Засновник та співвласник банку “<span lang="en">QusaBank</span>”.
+                  </p>
+                  <p class="owners__description_part">17 місце в
+                    укрфїнському списку “Форбс”.
+                  </p>
                 </div>
-                <h3 lang="en" class="cards-main-name subtitle">infinity-card</h3>
-                <p class="p_small">
-                  Картка підкреслює статус власника. Це найвищий рівень турботи та
-                  безпеки.
-                </p>
-              </a>
+              </div>
+              <h3 class="owners__name_main subtitle">Гельжинський Савелій</h3>
+            </a>
+          </li>
+          <li class="owners__item_main">
+            <a class="owners__link_gh link" href="https://github.com/Poison2300" rel="noopener noreferrer nofollow"
+              target="_blank">
+              <div class="staff_main">
+                <img class="staff__photo_main" src="./images/jpg,png/seleznev.jpg"
+                  alt="Селезньов - співвласник банку QusaBank" width="280" />
+                <div class="owners__description">
+                  <p class="owners__description_part">
+                    Засновник та співвласник банку “<span lang="en">QusaBank</span>”.
+                  </p>
+                  <p class="owners__description_part">19 місце в
+                    укрфїнському списку “Форбс”.
+                  </p>
+                </div>
+              </div>
+              <h3 class="owners__name_main subtitle">Селезньов Володимир</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <a href="" lang="en" class="logo_footer logo link">QusaBank</a>
+      <address>
+        <div class="footer__address">
+          <a class="footer__link_opaque footer__link link" href="https://goo.gl/maps/NCCSErjgZUdGbSYT9"
+            rel="noopener noreferrer nofollow" target="_blank">адреса місцезнаходження</a>
+          <ul class="list">
+            <li>
+              <a lang="en" href="mailto:alex_rozhkov@ukr.net" class="footer__link link">alex_rozhkov@ukr.net</a>
+            </li>
+            <li>
+              <a href="tel:+380991723110" class="footer__link link">+38 099 172 31 10</a>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="about_main section" id="about">
-        <div class="about__container_main container">
-            <div class="about__text_main">
-              <h2 class="about__title_main title">Ващі грощі у надійних руках</h2>
-              <q class="about__cite_main">“без довіри немає сенсу продовжувати”.</q>
-              <p class="about__text_join">Долучайся до нашої тіми, оформлюй картку <span lang="en">QusaBank</span>:</p>
-              <a href="" class="order__link link">Оформити</a>
-            </div>
-            <ul class="owners__list_main list">
-              <li class="owners__item_main">
-                <a class="owners__link_gh link" href="https://github.com/Geljinskiy" rel="noopener noreferrer nofollow" target="_blank">
-                  <div class="staff_main">
-                    <img class="staff__photo_main" src="./images/jpg,png/geljinskiy.jpg" alt="Гельжинський - співвласник банку QusaBank" width="280"/>
-                    <div class="owners__description">
-                      <p class="owners__description_part">
-                        Засновник та співвласник банку “<span lang="en">QusaBank</span>”.
-                      </p>
-                      <p class="owners__description_part">17 місце в
-                        укрфїнському списку “Форбс”.
-                      </p>
-                    </div>
-                  </div>
-                  <h3 class="owners__name_main subtitle">Гельжинський Савелій</h3>
-                </a>
-              </li>
-              <li class="owners__item_main">
-                <a class="owners__link_gh link" href="https://github.com/Poison2300" rel="noopener noreferrer nofollow" target="_blank">
-                  <div class="staff_main">
-                    <img class="staff__photo_main" src="./images/jpg,png/seleznev.jpg" alt="Селезньов - співвласник банку QusaBank" width="280"/>
-                    <div class="owners__description">
-                      <p class="owners__description_part">
-                        Засновник та співвласник банку “<span lang="en">QusaBank</span>”.
-                      </p>
-                      <p class="owners__description_part">19 місце в
-                        укрфїнському списку “Форбс”.
-                      </p>
-                    </div>
-                  </div>
-                  <h3 class="owners__name_main subtitle">Селезньов Володимир</h3>
-                </a>
-              </li>
-            </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-          <a href="" lang="en" class="logo_footer logo link">QusaBank</a>
-          <address>
-            <div class="footer__address">
-              <a class="footer__link_opaque footer__link link" href="https://goo.gl/maps/NCCSErjgZUdGbSYT9" rel="noopener noreferrer nofollow" target="_blank" >адреса місцезнаходження</a>
-              <ul class="list">
-                <li>
-                  <a lang="en" href="mailto:alex_rozhkov@ukr.net" class="footer__link link"
-                    >alex_rozhkov@ukr.net</a>
-                </li>
-                <li>
-                  <a href="tel:+380991723110" class="footer__link link">+38 099 172 31 10</a>
-                </li>
-              </ul>
-            </div>
-          </address>
-      </div>
-    </footer>
-    <script src="./js/scrollBar.js"></script>
-    <script src="./js/modal.js"></script>
-  </body>
+      </address>
+    </div>
+  </footer>
+  <script src="./js/scrollBar.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>

@@ -33,3 +33,7 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " slider-nav__item_active";
 }
+
+
+
+//ctrl+d, ctrl+x, ctrl+a, <<ctrl+f2>>

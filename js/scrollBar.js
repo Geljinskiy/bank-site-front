@@ -1,20 +1,15 @@
-window.addEventListener("scroll", () => {
-  let scrollDistance = window.scrollY;
+setInterval(() => {
   document.querySelectorAll(".section").forEach((el, i) => {
-    if (
-      el.offsetTop - document.querySelector(".navigation").clientHeight <=
-      scrollDistance
-    ) {
+    if (el.getBoundingClientRect().y <= window.innerHeight / 2) {
       document.querySelectorAll(".navigation__link").forEach((el) => {
-        if (el.classList.contains(".navigation__link_active")) {
-          el.classList.remove(".navigation__link_active");
+        if (el.classList.contains("navigation__link_active")) {
+          el.classList.remove("navigation__link_active");
         }
       });
-      console.log(i);
       document
         .querySelectorAll(".navigation__item")
         [i].querySelector(".navigation__link")
-        .classList.add(".navigation__link_active");
+        .classList.add("navigation__link_active");
     }
   });
-});
+}, 100);

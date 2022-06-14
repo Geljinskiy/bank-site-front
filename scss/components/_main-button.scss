@@ -1,4 +1,4 @@
-.contact-button {
+.main-button {
   min-width: 180px;
   padding: 13px 22px;
   color: var(--primary-brand-color);
@@ -9,7 +9,6 @@
   cursor: pointer;
   transition: color var(--transition-main),
     background-color var(--transition-main);
-
   &:focus-visible,
   &:hover {
     color: var(--white-color);

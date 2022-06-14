@@ -50,6 +50,12 @@
   padding-right: 40px;
   transition: background-color var(--transition-main);
 }
+.cards__button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
 .n-card-main-color,
 .child-card-main-color,
 .infinity-card-main-color {

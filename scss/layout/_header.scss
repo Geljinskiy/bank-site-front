@@ -73,6 +73,9 @@
     transform: translateY(-50%);
     transition: transform 300ms linear;
   }
+  .menu__span_more {
+    transition: color var(--transition-main);
+  }
   &__item_more {
     overflow: visible;
     cursor: default;
@@ -93,14 +96,16 @@
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
     border-radius: 14px;
-    border: 1px solid var(--primary-brand-color);
+    background-color: rgba(236, 234, 234, 0.4);
+    backdrop-filter: blur(40px);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    transition: opacity var(--transition-main);
   }
   &__link_min {
     padding: 15px 30px;
