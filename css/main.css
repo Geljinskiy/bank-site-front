@@ -752,6 +752,10 @@ section {
   background-color: var(--tertiary-light-color);
 }
 
+.investing__item_main:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .investing__body {
   overflow-y: scroll;
 }
