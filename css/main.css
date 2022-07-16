@@ -702,20 +702,19 @@ section {
 }
 
 .investing__container_main {
-  display: flex;
-}
-
-.graphic__img_main {
-  margin-bottom: 50px;
-}
-
-.investing__text_main {
-  margin-right: 40px;
+  display: grid;
+  grid-template-areas: "heading image image" "list image image" "... join join";
+  column-gap: 40px;
+  row-gap: 50px;
 }
 
 .investing__title_main {
   font-weight: 400;
-  margin-bottom: 40px;
+  grid-area: heading;
+}
+
+.investing__list_main {
+  grid-area: list;
 }
 
 .investing__graphic_main {
@@ -723,10 +722,12 @@ section {
 }
 
 .graphic__img_main {
+  grid-area: image;
   border-radius: 16px;
 }
 
-.investing_join {
+.investing__join_main {
+  grid-area: join;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -734,7 +735,7 @@ section {
 }
 
 .investing__text_join {
-  margin-right: 88px;
+  width: 100%;
 }
 
 .investing__link_join {
@@ -753,7 +754,7 @@ section {
 }
 
 .investing__item_main:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .investing__body {
